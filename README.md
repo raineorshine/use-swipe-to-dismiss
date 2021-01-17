@@ -5,6 +5,8 @@ A simple React hook to dismiss an element by swiping, similar to mobile notifica
 
 Currently it only dismisses by swiping up, but let me know if you need it to work in a different direction and I can easily make it configurable.
 
+![Screen Capture](https://user-images.githubusercontent.com/750276/104828137-43d40480-5823-11eb-95bd-3aaf0aee2a05.gif)
+
 ## Features
 
 - Touch and Mouse compatible
