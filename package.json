@@ -23,7 +23,7 @@
   "main": "build",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "react": ">=17.0.0",
