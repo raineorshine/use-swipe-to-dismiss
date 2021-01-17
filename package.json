@@ -1,7 +1,7 @@
 {
   "name": "use-swipe-to-dismiss",
   "description": "A simple React hook to dismiss an element by swiping",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Raine Revere",
     "email": "raine.revere@protonmail.com",
