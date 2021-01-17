@@ -7,6 +7,8 @@
     "email": "raine.revere@protonmail.com",
     "url": "https://github.com/raineorshine"
   },
+  "homepage": "https://github.com/raineorshine/use-swipe-to-dismiss",
+  "repository": "https://github.com/raineorshine/use-swipe-to-dismiss",
   "license": "ISC",
   "engines": {
     "node": ">=12"
@@ -28,7 +30,11 @@
     "prepare": "npm run build"
   },
   "peerDependencies": {
-    "react": ">=17.0.0",
+    "react": ">=16.0.0",
     "typescript": ">=4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.21",
+    "@types/react": "^17.0.0"
   }
 }

@@ -9,7 +9,7 @@ Currently it only dismisses by swiping up, but let me know if you need it to wor
 
 ## Features
 
-- Touch and Mouse compatible
+- Touch compatible
 - Exponential resistance to swiping in the opposite direction
 - Snapback animation when dismiss is not completed
 - Configure dismiss threshold in px or % of height

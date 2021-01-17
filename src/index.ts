@@ -1,4 +1,3 @@
-// @ts-ignore
 import React, { useCallback, useEffect, useState } from 'react'
 
 const defaultOptions = {
@@ -91,8 +90,6 @@ const useSwipeToDismiss = (options: {
   }, [y0])
 
   return {
-    onMouseDown: start,
-    onMouseUp: stop,
     onTouchStart: start,
     onTouchEnd: stop,
     onTouchMove: move,
