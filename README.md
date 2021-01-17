@@ -27,15 +27,17 @@ const useSwipeToDismiss = require('use-swipe-to-dismiss')
 
 const AlertComponent = () => {
 
-  const [dismissed, setDismissed] = useState(false)
+  const [show, setShow] = useState(true)
 
   const useSwipeToDismissProps = useSwipeToDismiss({ 
     onDismiss: () => {
-      setDismissed(true)
+      show(false)
     }
   })
 
-  return <div {...useSwipeToDismissProps}>Alert!</div>
+  return show
+    ? <div {...useSwipeToDismissProps}>Alert!</div>
+    : null
 }
 ```
 
