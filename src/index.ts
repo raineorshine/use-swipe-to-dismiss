@@ -1,3 +1,4 @@
+// @ts-ignore
 import React, { useCallback, useEffect, useState } from 'react'
 
 const defaultOptions = {
@@ -48,13 +49,13 @@ const useSwipeToDismiss = (options: {
     setHeight(ref.current.offsetHeight)
   }, [])
 
-  const start = useCallback(e => {
+  const start = useCallback((e: React.TouchEvent) => {
     // do not animate during drag so that element tracks touch exactly
     setAnimate(false)
     setY0(e.touches?.[0].pageY)
   }, [])
 
-  const stop = useCallback(e => {
+  const stop = useCallback((e: React.TouchEvent) => {
     // animate on release for snapback animation
     setAnimate(true)
 
@@ -77,7 +78,7 @@ const useSwipeToDismiss = (options: {
     }
   }, [dy, height])
 
-  const move = useCallback(e => {
+  const move = useCallback((e: React.TouchEvent) => {
 
     // move element to track touch
     const y = e.touches?.[0].pageY
